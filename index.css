@@ -1,0 +1,37 @@
+.middle {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    outline: none;
+    }
+.center{
+    margin: 0;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    outline: none;
+    }
+
+.inputField{
+  
+    border: 1px solid lightgray;
+    border-radius:25px;
+    padding: 20px; 
+    width:360px;
+    height: 5px;
+    outline: none;
+    }
+
+.btn{
+    background-color:#F0F0F0;
+    width:15rem;
+    height:3rem;
+    color: #606060;
+    border: #FAFAFA;
+    font-size: medium;    
+}
