@@ -23,9 +23,10 @@
 -->
   <div class="middle">
 	  <form action="https://bigbluebutton.coep.org.in/demo/create.jsp">
-		  <img src="https://moodle.com/wp-content/uploads/2019/04/BigBlueButton.png" alt="BigBlueButton" style="width:360px;height:90px;margin-left:auto; margin-bottom: 5%;"></br>
+		  <img src="https://moodle.com/wp-content/uploads/2019/04/BigBlueButton.png" alt="BigBlueButton" style="width:380px;height:90px;margin-left:auto; margin-bottom: 5%;">
+      </br>
 		  
-      <input type="text" id="username" name="username" class="inputField">
+      <input type="text" id="username" name="username" value=" " class="inputField">
       <input type="hidden" id="meetingID" name="meetingID" value="BBBtest's meeting">
       <input type="hidden" id="action" name="action" value="enter">
 
@@ -34,8 +35,7 @@
     <div class="center">
 		  <input type="submit" value="Join Meeting" class="btn">
     </div>
-    
-
+    <script>document.getElementById("username").focus();</script>
 </body>
 
 </html>
