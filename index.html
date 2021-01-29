@@ -5,7 +5,15 @@
 <head>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./index.css">
-
+  <script>
+function validateForm() {
+  var x = document.forms["myForm"]["username"].value;
+  if (x == "" || x == null) {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
 </head>
 
 <body>
@@ -23,19 +31,18 @@
           https://bigbluebutton.coep.org.in/demo/create.jsp?username=Prajjwal&meetingID=test004%2527s%2Bmeeting&action=enter
 -->
   <div class="middle">
-	  <form action="https://bigbluebutton.coep.org.in/demo/create.jsp">
+	  <form name="myForm" action="https://bigbluebutton.coep.org.in/demo/create.jsp" onsubmit="return validateForm()">
 		  <img src="https://moodle.com/wp-content/uploads/2019/04/BigBlueButton.png" alt="BigBlueButton" style="width:380px;height:90px;margin-left:auto; margin-bottom: 5%;">
       </br>
-		  
-      <input type="text" id="username" name="username" value=" " class="inputField">
+      <input type="text" id="username" name="username" placeholder="Enter Your name" value="" class="inputField">
       <input type="hidden" id="meetingID" name="meetingID" value="COEP_FOSSMEET's meeting">
       <input type="hidden" id="action" name="action" value="enter">
 
 	  <form>
     <br>
+		  <input type="submit" value="Join Meeting" class="btn">
   </div>
     <div class="center">
-		  <input type="submit" value="Join Meeting" class="btn">
     </div>
     <script>document.getElementById("username").focus();</script>
 </body>
